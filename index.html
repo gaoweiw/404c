@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/swiper-4.4.1.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
@@ -17,24 +20,188 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide fast-bgk">
-					<h2>首页</h2>
-					<h5 id="showExplain">活动规则</h5>
-					<div class="popup-style ani" id="boxExplain" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
-						这里是说明,这里是说明,这里是说明,这里是说明这里是说明,这里是说明,这里是说明,这里是说明,这里是说明
+					<div class="btn-start next"></div>
+					<div id="showExplain" class="text-explain">游戏规则</div>
+					<div class="popup-style" id="boxExplain">
+						<div class="popup-box">
+							<div class="btn-explain"></div>
+							<div class="btn-close"></div>
+							这里是说明,这里是说明,这里是说明,这里是说明这里是说明,这里是说明,这里是说明,这里是说明,这里是说明
+						</div>
 					</div>
-					<span class="next">下一页</span>
-					<span class="next">下一页</span>
-					<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">内容</p>
 				</div>
-				<div class="swiper-slide">
-					Slide 2
-					<span class="next">下一页</span>
-					<span class="next">下一页</span>
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">1.请选择你的性别</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-3 topic-1-nan"></div>
+							<div class="col-3 topic-1-nv"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container">
+						<div class="row answer-box-small">
+							<div class="col-3 ani next btn-bgk" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">男</div>
+							<div class="col-3 ani next btn-bgk" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">女</div>
+						</div>
+					</div>
 				</div>
-				<div class="swiper-slide">
-					Slide 3
-					<span class="prev">上一页</span>
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">2.选择你的学科类别</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container">
+						<div class="row answer-box-small">
+							<div class="col-6 ani next btn-bgk" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">工科</div>
+							<div class="col-6 ani next btn-bgk" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">文科</div>
+							<div class="col-6 ani next btn-bgk" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">艺术生</div>
+						</div>
+					</div>
 				</div>
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">3.对你来说，笔记本最重要的属性是什么？（选两项）</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-small">
+							<div class="col-6 btn-bgk">颜值</div>
+							<div class="col-6 btn-bgk">轻薄</div>
+							<div class="col-6 btn-bgk">游戏性能</div>
+							<div class="col-6 btn-bgk">商务性能</div>
+							<div class="col-6 btn-bgk">续行旅行</div>
+							<div class="col-6 btn-bgk">储存性能</div>
+							<div class="col-6 btn-bgk next">品牌</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">4.如果你去探索一个古墓，下面什么选项是你第一选择带上的？</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-big">
+							<div class="col-6 ani btn-bgk-big next" data-grade="1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">手电筒</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="4" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">食物和水</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="3" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">防备僵尸的糯米</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="2" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">战斗用的武器</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">5.在你面前有四条通道，你会选择哪一条？</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-big">
+							<div class="col-6 ani btn-bgk-big next" data-grade="1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">疑似墓室主干道的道路</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="4" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">已经被坍塌的泥沙覆盖的小道</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="2" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">看上去很正常的支路</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="3" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">有人类脚印的道路</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">6.你们来到一间墓室，有四个墓穴可以开，你会选择打开哪一个？</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-big">
+							<div class="col-6 ani btn-bgk-big next" data-grade="1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">华丽的主墓</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="3" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">一个被打开了一角的墓穴</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="2" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">疑似随从的墓穴</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="4" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">中等大小的墓穴</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">7.你们找到了宝物，但是宝物上面充满诅咒，只能带走一样，你会选择什么？</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-big">
+							<div class="col-6 ani btn-bgk-big next" data-grade="2" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">镶满宝石的皇冠</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="3" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">疑似钥匙的东西</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="4" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">写满异性文字的书籍</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="1" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">整箱的黄金</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">8.通过探险你们取得了巨大的名誉及财富，接下来你会选择做什么？</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-big">
+							<div class="col-6 ani btn-bgk-big next" data-grade="4" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">购买一座小岛隐居生活</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="3" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">研究古墓得到知识获得更多信息</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">利用得到的财富享受人生</div>
+							<div class="col-6 ani btn-bgk-big next" data-grade="2" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">投资发展自己的事业</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide page-bgk">
+					<div class="topic-over-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+							<div class="col-6">你是一个注重外表和喜欢旅行的鞋童，为你推荐</div>
+						</div>
+					</div>
+					<div class="topic-over-answer grid-container">
+						<div class="row">
+							<div class="col-6">
+								<div class="col-4">你的性格：<span class="color-f" id="gradeEnd"></span></div>
+								<div class="col-2">查看详情</div>
+							</div>
+							<div class="col-6">阳光心态，积极快乐</div>
+							<div class="col-6">激情澎湃，梦想万岁</div>
+							<div class="col-6">热情开朗，喜欢交友</div>
+							<div class="col-6 ani btn-bgk next">去抽奖吧！</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide page-bgk">
+					<div class="topic-name">抽奖页面</div>
+					<div class="topic-img grid-container">
+						<div class="row">
+							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-small">
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">购买一座小岛隐居生活</div>
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">研究古墓得到知识获得更多信息</div>
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">利用得到的财富享受人生</div>
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">投资发展自己的事业</div>
+						</div>
+					</div>
+				</div>
+				
+				
 			</div>
 			<!-- 如果需要分页器 -->
 			<!-- <div class="swiper-pagination"></div> -->
