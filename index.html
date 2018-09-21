@@ -13,9 +13,9 @@
 	</head>
 	<body>
 		<div class="music">
-			<!-- <audio src="audio/understand in the end.mp3" loop="loop" autoplay="autoplay">
+			<audio preload="preload" src="audio/2page.mp3" autoplay="autoplay" id="audio" loop>
 				Your browser does not support the audio element.
-			</audio> -->
+			</audio>
 		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -40,8 +40,8 @@
 					</div>
 					<div class="topic-answer grid-container">
 						<div class="row answer-box-small">
-							<div class="col-3 ani next btn-bgk" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">男</div>
-							<div class="col-3 ani next btn-bgk" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">女</div>
+							<div class="col-3 ani next btn-bgk gender" data-gender="1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">男</div>
+							<div class="col-3 ani next btn-bgk gender" data-gender="0" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">女</div>
 						</div>
 					</div>
 				</div>
@@ -54,9 +54,9 @@
 					</div>
 					<div class="topic-answer grid-container">
 						<div class="row answer-box-small">
-							<div class="col-6 ani next btn-bgk" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">工科</div>
-							<div class="col-6 ani next btn-bgk" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">文科</div>
-							<div class="col-6 ani next btn-bgk" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">艺术生</div>
+							<div class="col-6 ani next btn-bgk ceshiqiehuan" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">工科</div>
+							<div class="col-6 ani next btn-bgk ceshiqiehuan" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">文科</div>
+							<div class="col-6 ani next btn-bgk ceshiqiehuan" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">艺术生</div>
 						</div>
 					</div>
 				</div>
@@ -69,13 +69,13 @@
 					</div>
 					<div class="topic-answer grid-container topic-answer-more">
 						<div class="row answer-box-small">
-							<div class="col-6 btn-bgk topic-two" data-type="1">颜值</div>
-							<div class="col-6 btn-bgk topic-two" data-type="2">轻薄</div>
-							<div class="col-6 btn-bgk topic-two" data-type="3">游戏性能</div>
-							<div class="col-6 btn-bgk topic-two" data-type="4">商务性能</div>
-							<div class="col-6 btn-bgk topic-two" data-type="5">续行旅行</div>
-							<div class="col-6 btn-bgk topic-two" data-type="6">储存性能</div>
-							<div class="col-6 btn-bgk topic-two" data-type="7">品牌</div>
+							<div class="col-6 btn-bgk topic-two" data-type="a">颜值</div>
+							<div class="col-6 btn-bgk topic-two" data-type="b">轻薄</div>
+							<div class="col-6 btn-bgk topic-two" data-type="c">游戏性能</div>
+							<div class="col-6 btn-bgk topic-two" data-type="d">商务性能</div>
+							<div class="col-6 btn-bgk topic-two" data-type="e">续行旅行</div>
+							<div class="col-6 btn-bgk topic-two" data-type="f">储存性能</div>
+							<div class="col-6 btn-bgk topic-two" data-type="g">品牌</div>
 						</div>
 					</div>
 				</div>
@@ -163,31 +163,62 @@
 					</div>
 				</div>
 				
-				<div class="swiper-slide page-bgk">
-					<div class="topic-over-img grid-container">
+				<div class="swiper-slide page-bgk"><!--10页-->
+					<div class="topic-over-img">
+						<div class="color-m p-10-title">鲁大师发现你是：<span class="color-f p-10px" id="gradeEnd">换色性格</span></div>
+						<div class="phont-portrait">
+							
+						</div>
+						<div class="phont-portrait-text">
+							<div id="gradeMsg"></div><!--性格8种解释-->
+						</div>
+						<div class="watch-details">
+							<a href="javascript:void(0)" id="watchDetails">查看详情</a>
+						</div>
+					</div>
+					<div class="grid-container">
 						<div class="row">
-							<div class="col-6 topic-2"></div>
-							<div class="col-6">你是一个注重外表和喜欢旅行的鞋童，为你推荐</div>
+							<!-- <div class="col-6 topic-2"></div> -->
+							<div class="col-6">你是一个<span id="label1"></span>和<span id="label2"></span>的<span id="genderShow"></span>，为你推荐</div>
 						</div>
 					</div>
 					<div class="topic-over-answer grid-container">
 						<div class="row">
 							<div class="col-6">
-								<div class="col-4">你的性格：<span class="color-f" id="gradeEnd"></span></div>
-								<div class="col-2">查看详情</div>
+								<div class="col-4">你的性格：</div>
+								
 							</div>
-							<div id="gradeMsg"></div><!--性格8种解释-->
+							
 
 							<div class="col-6 ani btn-bgk next">去抽奖吧！</div>
 						</div>
 					</div>
 				</div>
 				
-				<div class="swiper-slide page-bgk">
+				<div class="swiper-slide page-bgk"><!--11页-->
 					<div class="topic-name">抽奖页面</div>
 					<div class="topic-img grid-container">
 						<div class="row">
 							<div class="col-6 topic-2"></div>
+						</div>
+					</div>
+					<div class="topic-answer grid-container topic-answer-more">
+						<div class="row answer-box-small">
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">购买一座小岛隐居生活</div>
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">研究古墓得到知识获得更多信息</div>
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">利用得到的财富享受人生</div>
+							<div class="col-6 ani btn-bgk next" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">投资发展自己的事业</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-slide page-bgk"><!--12页-->
+					<div class="topic-name">详情页面</div>
+					<div class="grid-container">
+						<div class="row">
+							<div class="col-2"><a href="javascript:void(0)" id="goBack">返回</a></div>
+							<div class="col-2" id="characterTitle">蓝色性格</div>
+							<div class="col-2"><a href="javascript:void(0)">分享</a></div>
 						</div>
 					</div>
 					<div class="topic-answer grid-container topic-answer-more">

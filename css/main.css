@@ -241,24 +241,74 @@ body {
 
 /*结束页面*/
 .topic-over-img{
+	position:relative;
+	margin:0 auto;
+	font-size: 0.8rem;
+	max-width:22rem;
+	height: 12rem;
+	background: url(../image/character_box.png);
+	overflow: hidden;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.p-10-title{
 	position: absolute;
-	width:100%;
-	top: 10%;
-	height: auto;
+	top:2.1rem;
+	left:7rem;
+}
+/*头像*/
+.phont-portrait{
+	position: absolute;
+	top:4.5rem;
+	left:4.2rem;
+	width:4.5rem;
+	height:4.5rem;
+	border:1px solid red;
+}
+.phont-portrait-text{
+	position: absolute;
+	color: #23ebeb;
+	top:4.5rem;
+	left:9.4rem;
+	width:9.5rem;
+	height:4.5rem;
+}
+.watch-details{/*查看详情*/
+	position: absolute;
+	bottom:0.4rem;
+	right:0.4rem;
+}
+.watch-details a{
+	text-decoration: none;
+	color:#01aeff;
 }
 .topic-over-answer{
 	position: absolute;
 	width:100%;
 	text-align: center;
 	top: 50%;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	color: #fff;
 	height: auto;
 	line-height: 35px;
 }
 
+
+
+
+
+
+
 .color-f{
 	color:#fff;
+}
+.color-m{
+	color: #23ebeb;
+}
+.p-10px{
+	box-sizing: border-box;
+	padding:5px 5px;
 }
 
 
