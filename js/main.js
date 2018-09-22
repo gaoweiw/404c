@@ -170,8 +170,8 @@ $(function() {
 			arr.push(item[j])
 		}
 		var html = '';
-		for (var i = 0; i < 3; i++) { //只显示3条
-			html += '<div class="col-6" style="line-height:1.8rem;font-size:0.8rem;">' + arr[i] + '</div>';
+		for (var i = 0; i < item.length; i++) { 
+			html += '<div class="col-6" style="line-height:2rem;font-size:0.8rem;">' + arr[i] + '</div>';
 		}
 		$('#gradeMsg').html(html);
 	}
@@ -180,7 +180,7 @@ $(function() {
 
 	var mySwiper = new Swiper('.swiper-container', {
 		// direction: 'vertical', //滑动方向
-		// initialSlide: 9,
+		// initialSlide: 11,
 		allowTouchMove: 0, //是否可以左右滑动
 		speed: 100, //切换速度
 
