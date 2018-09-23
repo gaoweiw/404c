@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div class="music">
-			<audio preload="preload" src="audio/2page.mp3" autoplay="autoplay" id="audio" loop>
+			<audio preload="preload" src="audio/music1.mp3" autoplay="autoplay" id="audio" loop>
 				Your browser does not support the audio element.
 			</audio>
 		</div>
@@ -21,7 +21,7 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide fast-bgk">
 					<div class="btn-start next"></div>
-					<div id="showExplain" class="text-explain">游戏规则</div>
+					<a id="showExplain" class="text-explain">游戏规则</a>
 					<div class="popup-style" id="boxExplain">
 						<div class="popup-box">
 							<div class="btn-explain"></div>
@@ -164,56 +164,99 @@
 				</div>
 				
 				<div class="swiper-slide page-bgk"><!--10页-->
-					<div class="topic-over-img">
-						
-						<div class="watch-details">
-							<a href="javascript:void(0)" id="watchDetails">查看详情</a>
+					<div class="grid-container">
+						<div class="row">
+							<a href="javascript:void(0)" class="end-pack next" data-id="boxCharacter">查看详情</a>
 						</div>
 					</div>
 					<div class="grid-container">
 						<div class="row">
-							<!-- <div class="col-6 topic-2"></div> -->
-							<div class="col-6">你是一个<span id="label1"></span>和<span id="label2"></span>的<span id="genderShow"></span>，为你推荐</div>
+							<a href="javascript:void(0)" class="end-pack next" data-id="boxModels">更多机型</a>
 						</div>
 					</div>
+					
 					<div class="topic-over-answer grid-container">
 						<div class="row">
-							<div class="col-6">
-								<div class="col-4">你的性格：</div>
-								
+							<div class="col-1"></div>
+							<div class="col-4 end-pack next" data-id="boxLucky">
+								<img src="./image/start_lotto.png">
 							</div>
-							
+							<div class="col-1"></div>
 
-							<div class="col-6 ani btn-bgk next">去抽奖吧！</div>
 						</div>
 					</div>
 				</div>
 				
-				<div class="swiper-slide page-bgk"><!--11页-->
-					<div class="topic-img-more grid-container ">
+				<div class="swiper-slide page-bgk" id="lastPage">
+					<!--抽奖-->
+					<div class="topic-img-more grid-container hide" id="boxLucky">
 						<div class="row">
 							<div class="col-6 topic-11 topic-img-bgk"></div>
 							<div class="col-6 color-f">* * * 中奖奖品 * * *</div>
 						</div>
-					</div>
-					
-				</div>
-				
-				<div class="swiper-slide topic-12-bgk"><!--12页-->
-					<div class="grid-container">
-						<div class="row">
-							<div class="col-6 color-f text-f"><a href="javascript:void(0)" id="goBack">返回</a></div>
+						<div class="row clearfix">
+							<div class="col-6">
+								<div id="award">
+									<div class="awardBox">
+										<img src="image/award03.png" />
+										<div class="awardGift">
+											<img src="image/award01.png" style="transform: rotate(28deg);"/>
+										</div>
+										<div class="start">
+											<img src="image/award04.png" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="show-prize">
+							<p class="color-f">恭喜您中了<span id="showPrize"></span></p>
+							<a href="javascript:void(0)" class="end-pack" data-id="boxAward">去领奖</a>
 						</div>
 					</div>
-					<div class="p-11-box">
-						<div class="color-m text-f p-11-title">鲁大师发现你是：</div>
-						<div class="color-f p-10px p-11-col" id="gradeEnd"></div>
-						<div class="phont-portrait-text">
-							<div id="gradeMsg"></div><!--性格8种解释-->
+					<!--性格详情-->
+					<div class="hide" id="boxCharacter">
+						<div class="grid-container">
+							<div class="row">
+								<div class="col-6 color-f text-f"><a href="javascript:void(0)" id="goBack">返回</a></div>
+							</div>
+						</div>
+						<div class="p-11-box">
+							<div class="color-m text-f p-11-title">鲁大师发现你是：</div>
+							<div class="color-f p-10px p-11-col" id="gradeEnd"></div>
+							<div class="phont-portrait-text">
+								<div id="gradeMsg"></div><!--性格8种解释-->
+							</div>
+						</div>
+					</div>
+					<!--奖品领取-->
+					<div class="hide" id="boxAward">
+						<div class="grid-container">
+							<div class="row">
+								<h2 class="color-yellow">恭喜你中奖啦!</h2>
+							</div>
+						</div>
+						<div class="grid-container show-prize-img">
+							<div class="row">
+								<div class="col-6">
+									<img src="./image/p3.png">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--更多机型-->
+					<div class="hide" id="boxModels">
+						<div class="grid-container">
+							<div class="row">
+								<div class="col-6 color-f text-f"><a href="javascript:void(0)" id="goBack2">返回</a></div>
+							</div>
+						</div>
+						<div class="p-14-box">
+							<div class="color-m text-f">选择适合您的机型</div>
+							
 						</div>
 					</div>
 				</div>
-				
 				
 			</div>
 			<!-- 如果需要分页器 -->
@@ -230,5 +273,6 @@
 	<script type="text/javascript" src="js/swiper-4.4.1.min.js"></script>
 	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/gagaRotate.js" ></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </html>
