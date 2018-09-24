@@ -6,7 +6,7 @@ body {
 }
 
 body {
-	background: #eee;
+	background: #01061e;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #000;
@@ -127,9 +127,9 @@ body {
 /*第一屏*/
 .fast-bgk {
 	background: url(../image/index.png);
-	background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	/* background-repeat: repeat no-repeat; */
+	background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	 background-repeat: no-repeat; 
 	background-position: center;
 	background-clip: padding-box;
 	background-origin: content-box;
@@ -171,6 +171,7 @@ body {
 	background: url('../image/p.png');
 	background-size: auto 100%;
 	-moz-background-size: auto 100%;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-clip: padding-box;
 	background-origin: content-box;
