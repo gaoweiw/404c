@@ -114,7 +114,7 @@ $(function() {
 	})
 
 	//结果页
-	$('#goBack,#goBack2').on('touchend', function() {
+	$('.go-back').on('touchend', function() {
 		mySwiper.slideTo(9);
 	});
 
@@ -231,7 +231,6 @@ $(function() {
 	});
 	
 	//音乐
-	
 	var audio = document.getElementById('audio');
 	audio.play();
 	$(document).one("touchstart",
@@ -244,6 +243,18 @@ $(function() {
 		var luyinpath = './audio/music2.mp3';
 		$('#audio').attr('src', luyinpath);
 		audio.play();
+	})
+
+	$('#audioPlay').on('touchend',function(){
+		var stop = $(this).hasClass('music-stop');
+		console.log(stop);
+		if(stop){//开始播放
+			audio.play();
+			$(this).addClass('music fa-spin').removeClass('music-stop');
+		}else{
+			audio.pause()
+			$(this).addClass('music-stop').removeClass('music fa-spin');
+		}
 	})
 
 
@@ -325,6 +336,11 @@ $(function() {
 
 	
 	//-------------------------------------------------------------------------------------------------------
+
+	//提交信息
+	$('#submit').on('touchend',function(){
+		$('#msgBox').html('<div style="width:80%;margin:10px 	auto;color:#23ebeb;line-height:26px;">收件信息提交成功，确认信息无误后，工作人员将在10个工作日内寄出。</div>')
+	})
 });
 function rnd(rate){
 	var random = Math.floor(Math.random() * 100);
@@ -352,3 +368,21 @@ function rnd(rate){
 		}
 	}
 }
+
+function IsPC() {
+      	var userAgentInfo = navigator.userAgent;      
+	var Agents = ["Android", "iPhone",         "SymbianOS", "Windows Phone",         "iPad", "iPod"      ];      
+	var flag = true;      
+	for (var v = 0; v < Agents.length; v++) {        
+		if (userAgentInfo.indexOf(Agents[v]) > 0) {          
+			flag = false;          
+			break;        
+		}      
+	}      
+	return flag;    
+}
+// if (!IsPC()) {      
+// 	window.location.href = 'index.html';    
+// }
+
+

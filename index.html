@@ -5,17 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
 		<link rel="stylesheet" type="text/css" href="css/swiper-4.4.1.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<title>创造404，发现你的开学C位</title>
 	</head>
 	<body>
-		<div class="music">
+		<div class="music fa fa-spin" id="audioPlay">
 			<audio preload="preload" src="audio/music1.mp3" autoplay="autoplay" id="audio" loop>
 				Your browser does not support the audio element.
 			</audio>
+			<i class="fa fa-music"></i>
 		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -218,7 +220,9 @@
 					<div class="hide" id="boxCharacter">
 						<div class="grid-container">
 							<div class="row">
-								<div class="col-6 color-f text-f"><a href="javascript:void(0)" id="goBack">返回</a></div>
+								<div class="col-1 color-f"><a href="javascript:void(0)" class="go-back"><i class="fa fa-chevron-left"></i></a></div>
+								<div class="col-4"></div>
+								<div class="col-1"></div>
 							</div>
 						</div>
 						<div class="p-11-box">
@@ -230,10 +234,12 @@
 						</div>
 					</div>
 					<!--奖品领取-->
-					<div class="hide" id="boxAward">
+					<div class="hide clearfix" id="boxAward">
 						<div class="grid-container">
 							<div class="row">
-								<h2 class="color-yellow">恭喜你中奖啦!</h2>
+								<div class="col-1 color-f"><a href="javascript:void(0)" class="go-back"><i class="fa fa-chevron-left"></i></a></div>
+								<div class="col-4"><h2 class="color-yellow">恭喜你中奖啦!</h2></div>
+								<div class="col-1"></div>
 							</div>
 						</div>
 						<div class="grid-container show-prize-img">
@@ -241,6 +247,26 @@
 								<div class="col-6">
 									<img src="./image/p3.png">
 								</div>
+								<div class="col-1"></div>
+								<div class="col-4"><span class="color-f">奖品名称</span></div>
+								<div class="col-1"></div>
+									
+								
+								<div class="col-6"><hr class="hr-center"></div>
+							</div>
+						</div>
+						<div class="grid-container msg-box">
+							<div class="row" id="msgBox">
+								<div class="msg-input-6 color-m"><span>收件信息</span></div>
+								<div class="msg-input-6" style="margin-top:8px;"><input class="msg-input" type="text" name="" placeholder="姓名"></div>
+								<div class="msg-blue"></div>
+								<div class="msg-input-6"><input class="msg-input" type="number" name="" placeholder="手机"></div>
+								<div class="msg-blue"></div>
+								<div class="msg-input-6"><input class="msg-input" type="text" name="" placeholder="地址"></div>
+								<div class="msg-submit">
+									<a href="javascript:void(0)" id="submit"  class="color-f">提 交</a>
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -248,13 +274,90 @@
 					<div class="hide" id="boxModels">
 						<div class="grid-container">
 							<div class="row">
-								<div class="col-6 color-f text-f"><a href="javascript:void(0)" id="goBack2">返回</a></div>
+								<div class="col-1 color-f"><a href="javascript:void(0)" class="go-back"><i class="fa fa-chevron-left"></i></a></div>
+								<div class="col-4 color-f computer-big-title color-m">选择适合您的机型</div>
+								<div class="col-1 color-f"></div>
 							</div>
 						</div>
-						<div class="p-14-box">
-							<div class="color-m text-f">选择适合您的机型</div>
-							
+						<div class="grid-container">
+							<div class="row">
+								<div class="col-6 p-14-box">
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+									<div class="col-3 computer-box">
+										<div class="computer-img">
+											<img src="./image/p3.png">
+										</div>
+										<div class="computer-title">
+											<a href="#" class="color-f ">戴尔dell灵越戴尔dell灵越戴尔dell灵越</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 				
